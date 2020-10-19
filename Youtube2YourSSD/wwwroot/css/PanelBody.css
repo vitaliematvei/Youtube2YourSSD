@@ -56,13 +56,34 @@ p {
     height: 60px;
     width: 120px;
     border-radius: 0 4px 4px 0;
-}
-.btn-lg {
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 4px;
-    color: #fff;
-    border: 1px solid #ff0068;
+    box-shadow: none;
+    color: white;
     background: #f20a51;
-    font-weight: 400;
+}
+
+    #btn-submit:hover {
+        background: #C10841;
+    }
+
+p.small {
+    color: #666;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+    p.small a.active {
+        color: #c10841;
+        text-decoration: none;
+    }
+
+
+/* result
+-------------------------------------------------- */
+#result {
+    max-width: 800px;
+    margin: 20px auto 0;
+
+    height: 200px;
+    background: #20ce83;
+    border-radius: 10px;
 }

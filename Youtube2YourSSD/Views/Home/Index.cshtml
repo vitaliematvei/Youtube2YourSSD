@@ -4,22 +4,34 @@
 
 <div class="text-center bg-white border rounded">
     <div class="panel-body">
-       @* <div class="div-form">*@
         <div class="hero hero-homepage">
             <h1 class="hero-header">Youtube to MP3</h1>
             <p>Download YouTube videos in MP3, MP4, 3GP,... and many more formats</p>
             <div>
-                <form class="form-inline form-search" action="/en61" id="search-form" name="mc-embedded-subscribe-form">
+                <form class="form-inline form-search" asp-action="YouTubeDownloader" method="POST" id="search-form" name="mc-embedded-subscribe-form">
                     <input class="form-control form-control-lg" value="https://www.youtube.com/watch?v=C_xKsYG7KGQ&list=PLxNH9OmYaam82QDkiwdhXZnatUSrLdreF" id="txt-url" name="query" type="text" placeholder="Search or paste link here..." autocomplete="off">
-                    <button type="button" value="Start" id="btn-submit" class="btn btn-lg" onclick="analyze();">
-                        <span class="hidden-xs">Start </span> <span class="glyphicon glyphicon-arrow-right"></span>
+                    <button type="button" value="Start" id="btn-submit" class="btn btn-lg">
+                        <span class="hidden-xs">Start </span>
+                        <span class="fa fa-arrow-right ml-1"></span>
                     </button>
-                    <div id="result-suggest-container"></div>
-                    <p class="small">By using our service you are accepting our <a class="active" href="/terms-of-service" target="_blank">terms of use</a>.</p>
-                    <img id="loading_img" src="//www.y2mate.com/themes/images/loading.gif" style="display: none;">
+                    <div class="container">
+                        <p class="small">By using our service you are accepting our <a class="active" href="/terms-of-service" target="_blank">terms of use</a>.</p>
+                        <img id="loading_img" src="//www.y2mate.com/themes/images/loading.gif" style="display: none;">
+                    </div>
                 </form>
             </div>
+            <div id="result">
+                <div class="tabs row">
+                    <div class="col-xs-12 col-md-5 col-sm-5">
+                        <div class="img-thumbnail cover">
+                            <a class="video-thumbnail" href="#" rel="nofollow">
+                                <img src="#" alt="Youtbe downloader thumbnail" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      @*  </div>*@
     </div>
 </div>
